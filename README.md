@@ -37,40 +37,48 @@ This project demonstrates how to apply **transfer learning** for image classific
 
 ## 🧠 Model Architecture
 
-* ✅ **Base**: MobileNetV2 (frozen initially, then fine-tuned)
+* ✅ **Base Model**: MobileNetV2 (frozen initially, then fine-tuned)
 * ✅ **Custom Head**:
   * GlobalAveragePooling2D  
-  * Dense(512, ReLU)  
-  * Dropout(0.3)  
-  * Dense(1, Sigmoid)
-* ✅ **Loss**: Binary Crossentropy  
-* ✅ **Optimizer**: Adam (lower LR during fine-tuning)  
-* ✅ **Metrics**: Accuracy
+  * Dense layer with 512 units (ReLU activation)  
+  * Dropout layer (rate = 0.3)  
+  * Output Dense layer (1 unit, Sigmoid activation)
+* ✅ **Loss Function**: Binary Crossentropy  
+* ✅ **Optimizer**: Adam (with reduced learning rate for fine-tuning)  
+* ✅ **Metric**: Accuracy
 
 ---
 
 ## 📊 Results
 
 * 🟢 **Validation Accuracy**: ~95%
-* 📈 Two-phase training:
-  * Phase 1: Base frozen  
-  * Phase 2: Fine-tuning last 20 layers
-* 🧪 Visualized predictions on uploaded images
+* 📈 **Two-phase training**:
+  * Phase 1: Base model frozen  
+  * Phase 2: Fine-tuned last 20 layers of MobileNetV2
+* 🧪 Visualized predictions on uploaded images with confidence scores
 
 ---
 
 ## 🎯 Key Features
 
-* ✅ Data augmentation (rotation, zoom, shift, flip)  
-* ✅ Real-time image classification using Colab uploads  
-* ✅ Confidence thresholds for improved decision boundaries  
-* ✅ Matplotlib-based result display with prediction label
+* ✅ Data augmentation (rotation, zoom, shift, horizontal flip)  
+* ✅ Real-time prediction using uploaded images in Google Colab  
+* ✅ Threshold-based decision system for confident predictions  
+* ✅ Visual output using Matplotlib with prediction labels
 
 ---
 
 ## 📸 Sample Prediction Output
 
-![Prediction Output](https://github.com/user-attachments/assets/5e0a4ca3-48a1-4553-9c4d-e1f903b8b4ee)
+**Uploaded file**: `dog.jpg`  
+**Prediction**: 🐶 **Dog**  
+**Confidence**: `0.92`
+
+**Threshold Logic**:
+- `> 0.8` → 🐶 Dog  
+- `< 0.2` → 🐱 Cat  
+- `0.2 – 0.8` → ❓ Not Sure
+
 
 
 
