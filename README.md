@@ -70,7 +70,8 @@ This project demonstrates how to apply **transfer learning** for image classific
 
 ## 📸 Sample Prediction Output
 
-<img width="481" height="515" alt="image" src="https://github.com/user-attachments/assets/5e0a4ca3-48a1-4553-9c4d-e1f903b8b4ee" />
+![Prediction Output](https://github.com/user-attachments/assets/5e0a4ca3-48a1-4553-9c4d-e1f903b8b4ee)
+
 
 
 
