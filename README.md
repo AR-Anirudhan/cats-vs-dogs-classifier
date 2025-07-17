@@ -1,3 +1,4 @@
+![Banner](banner.png)
 # 🐶🐱 Cats vs Dogs Classifier (Deep Learning with MobileNetV2)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AR-Anirudhan/cats-vs-dogs-classifier/blob/main/cats%20vs%20dogs.ipynb)
 
