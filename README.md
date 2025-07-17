@@ -1,4 +1,6 @@
 # 🐶🐱 Cats vs Dogs Classifier (Deep Learning with MobileNetV2)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AR-Anirudhan/cats-vs-dogs-classifier/blob/main/cats%20vs%20dogs.ipynb)
+
 
 A computer vision project that classifies images of cats and dogs using **Transfer Learning** with **MobileNetV2**, achieving **95% validation accuracy**. Built and trained using **TensorFlow** in **Google Colab**, with real-time prediction support via uploaded images.
 
