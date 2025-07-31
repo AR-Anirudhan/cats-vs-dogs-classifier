@@ -119,9 +119,12 @@ This project demonstrates how to apply **transfer learning** for image classific
 
 ---
 
-## 📝 License
+## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License © 2025 AR Anirudhan.  
+Reuse is permitted with proper attribution.  
+See the [LICENSE](./LICENSE) file for full terms.
+
 
 ---
 
